@@ -10,12 +10,11 @@ call plug#begin("~/.vim/plugged")
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'ayu-theme/ayu-vim'
-Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'Mofiqul/vscode.nvim'
+Plug 'tomasiser/vim-code-dark'
 call plug#end()
 
-set termguicolors
-let ayucolor="dark"   " for dark version of theme
-colorscheme ayu
+colorscheme codedark
 
 let mapleader = " "
 nnoremap <leader>pv :Vex<CR>
@@ -30,3 +29,6 @@ nnoremap <leader>Y gg"+yG
 
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
+
+highlight LineNr ctermfg=LightGrey guifg=#888888
+highlight CursorLineNr ctermfg=Yellow guifg=#FFFF00
