@@ -1,3 +1,4 @@
+vi  ~/.config/aerospace/aerospace.toml
 # Place a copy of this config to ~/.aerospace.toml
 
 # You can use it to add commands that run after AeroSpace startup.
