@@ -34,3 +34,4 @@ export PATH="$PATH:$GOPATH/bin"
 bindkey '^ ' autosuggest-accept
 alias ls=colorls
 alias cat=bat
+alias vi=nvim
