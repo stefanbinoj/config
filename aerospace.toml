@@ -42,6 +42,21 @@ automatically-unhide-macos-hidden-apps = false
 [key-mapping]
     preset = 'qwerty'
 
+ [[on-window-detected]]
+    if.app-id = 'com.apple.systempreferences'
+    run = ['layout floating']
+ [[on-window-detected]]
+    if.app-id = 'com.apple.finder'
+    run = ['layout floating']
+ [[on-window-detected]]
+    if.app-id = 'com.apple.Preview'
+    run = ['layout floating']
+ [[on-window-detected]]
+    if.app-id = 'com.apple.ActivityMonitor'
+    run = ['layout floating']
+ [[on-window-detected]]
+    if.app-id = 'com.apple.QuickTimePlayerX'
+    run = ['layout floating']
 # Gaps between windows (inner-*) and between monitor edges (outer-*).
 # Possible values:
 # - Constant:     gaps.outer.top = 8
