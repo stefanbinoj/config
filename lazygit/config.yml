@@ -16,8 +16,13 @@ os:
 commandStatus: true
 # git:
 #   fileDiffTemplate: 'git difftool --no-prompt --extcmd="icdiff -U3 -H -N --cols{{width}}" {{args}} {{filename}}'
+# git:
+#  pagers:
+#    - colorArg: always
+#      pager: delta --dark --paging=never --syntax-theme base16-256 --side-by-side
+
 git:
   pagers:
     - colorArg: always
-      pager: delta --dark --paging=never --syntax-theme base16-256 --side-by-side
+      pager: delta --paging=never
 
