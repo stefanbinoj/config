@@ -11,6 +11,10 @@ gui:
       - bold
     inactiveBorderColor:
       - bold
+    selectedLineBgColor:
+      - "#3a5f8a"
+    selectedRangeBgColor:
+      - "#3a5f8a"
 os:
   edit: 'nvim {{filename}}'
 commandStatus: true
