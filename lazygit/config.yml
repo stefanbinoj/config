@@ -1,0 +1,20 @@
+# vi /Users/stefanbinoj/Library/Application Support/lazygit/config.yml
+
+gui:
+  scrollheight: 4
+  scrollPastBottom: true
+  mouseEvents: true
+  #sidePanelWidth: 50
+  theme:
+    activeBorderColor:
+      - green
+      - bold
+    inactiveBorderColor:
+      - bold
+
+os:
+  edit: 'nvim {{filename}}'
+
+git:
+  fileDiffTemplate: 'git difftool --no-prompt --extcmd="icdiff -U3 -H -N --cols{{width}}" {{args}} {{filename}}'
+commandStatus: true
