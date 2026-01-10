@@ -4,17 +4,20 @@ gui:
   scrollheight: 4
   scrollPastBottom: true
   mouseEvents: true
-  #sidePanelWidth: 50
+  sidePanelWidth: 0.2
   theme:
     activeBorderColor:
       - green
       - bold
     inactiveBorderColor:
       - bold
-
 os:
   edit: 'nvim {{filename}}'
-
-git:
-  fileDiffTemplate: 'git difftool --no-prompt --extcmd="icdiff -U3 -H -N --cols{{width}}" {{args}} {{filename}}'
 commandStatus: true
+# git:
+#   fileDiffTemplate: 'git difftool --no-prompt --extcmd="icdiff -U3 -H -N --cols{{width}}" {{args}} {{filename}}'
+git:
+  pagers:
+    - colorArg: always
+      pager: delta --dark --paging=never --syntax-theme base16-256 --side-by-side
+
