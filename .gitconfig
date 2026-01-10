@@ -12,21 +12,23 @@
 	side-by-side = true
 	line-numbers = true
 	dark = true
-	syntax-theme = OneHalfDark
-	minus-style = syntax "#330f0f"
-	minus-emph-style = syntax "#4f1917"
-	plus-style = syntax "#0e2f19"
-	plus-emph-style = syntax "#174525"
-	line-numbers-minus-style = "#ff0051"
-	line-numbers-plus-style = "#03e57f"
-	line-numbers-zero-style = "#aaaaaa"
-	hunk-header-style = file line-number syntax
-	hunk-header-decoration-style = blue box
-	file-style = yellow bold
-	file-decoration-style = yellow ul
+	; syntax-theme = OneHalfDark
+	; minus-style = syntax "#330f0f"
+	; minus-emph-style = syntax "#4f1917"
+	; plus-style = syntax "#0e2f19"
+	; plus-emph-style = syntax "#174525"
+	; line-numbers-minus-style = "#ff0051"
+	; line-numbers-plus-style = "#03e57f"
+	; line-numbers-zero-style = "#aaaaaa"
+	; hunk-header-style = file line-number syntax
+	; hunk-header-decoration-style = blue box
+	; file-style = yellow bold
+	; file-decoration-style = yellow ul
 [merge]
 	conflictStyle = zdiff3
-[diff]
-	tool = nvimdiff
-[difftool]
-	prompt = false
+[color "diff"]
+	old = red
+	new = green
+	meta = yellow
+	frag = cyan
+
