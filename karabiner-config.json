@@ -58,7 +58,7 @@
                         ]
                     },
                     {
-                        "description": "Change left_command+hjkl to arrow keys (except Raycast, VSCode, Zed, Cursor)",
+                        "description": "Change left_control+hjkl to arrow keys (except Raycast, VSCode, Zed, Cursor)",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -75,7 +75,7 @@
                                 "from": {
                                     "key_code": "h",
                                     "modifiers": {
-                                        "mandatory": ["left_command"],
+                                        "mandatory": ["left_control"],
                                         "optional": ["any"]
                                     }
                                 },
@@ -97,7 +97,7 @@
                                 "from": {
                                     "key_code": "j",
                                     "modifiers": {
-                                        "mandatory": ["left_command"],
+                                        "mandatory": ["left_control"],
                                         "optional": ["any"]
                                     }
                                 },
@@ -119,7 +119,7 @@
                                 "from": {
                                     "key_code": "k",
                                     "modifiers": {
-                                        "mandatory": ["left_command"],
+                                        "mandatory": ["left_control"],
                                         "optional": ["any"]
                                     }
                                 },
@@ -141,7 +141,7 @@
                                 "from": {
                                     "key_code": "l",
                                     "modifiers": {
-                                        "mandatory": ["left_command"],
+                                        "mandatory": ["left_control"],
                                         "optional": ["any"]
                                     }
                                 },
@@ -158,7 +158,7 @@
                                     "key_code": "caps_lock",
                                     "modifiers": { "optional": ["any"] }
                                 },
-                                "to": [{ "key_code": "right_control" }],
+                                "to": [{ "key_code": "left_control" }],
                                 "to_if_alone": [{ "key_code": "escape" }],
                                 "type": "basic"
                             }
