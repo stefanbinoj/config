@@ -21,17 +21,13 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 [ -s "/Users/stefanbinoj/.bun/_bun" ] && source "/Users/stefanbinoj/.bun/_bun"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export LDFLAGS="-L/opt/homebrew/opt/openssl@1.1/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/openssl@1.1/include"
-export PKG_CONFIG_PATH="/opt/homebrew/opt/openssl@1.1/lib/pkgconfig"
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=/opt/homebrew/opt/openssl@1.1"
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
 #Go
 export GOPATH="${GOPATH:-$HOME/go}"
 export PATH="$PATH:$GOPATH/bin"
+# Rust
+export PATH="$HOME/.cargo/bin:$PATH"
 
 bindkey '^ ' autosuggest-accept
 
@@ -40,3 +36,6 @@ alias zed="open -a /Applications/Zed.app -n"
 alias vi=nvim
 alias lg=lazygit
 alias ld=lazydocker
+
+# zoxide
+eval "$(zoxide init zsh)"
